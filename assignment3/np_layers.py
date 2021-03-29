@@ -98,7 +98,7 @@ def max_pool_forward(x, pool_param):
     No padding is necessary here. Output size is given by 
 
     Returns a tuple of:
-    - out: Output data, of shape (N, C, H', W') where H' and W' are given by
+    - out: Output data, of shape (N, H', W', C) where H' and W' are given by
       H' = 1 + (H - pool_height) / stride
       W' = 1 + (W - pool_width) / stride
     """
